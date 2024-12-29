@@ -7,6 +7,8 @@ const Body = () => {
     const [searchQuery, setSearchQuery] = useState('');
     const [filteredRestaurants, setFilteredRestaurants] = useState(dummyRestaurants);
 
+
+
     const handleSearch = () => {
         const results = dummyRestaurants.filter((restaurant) =>
             restaurant.name.toLowerCase().includes(searchQuery.toLowerCase())
